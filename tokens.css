@@ -1,0 +1,44 @@
+/* Hallmark · design tokens for the Thekedaar App landing page */
+:root {
+  --color-paper: oklch(97.5% 0.012 85);
+  --color-paper-2: oklch(94.5% 0.022 80);
+  --color-ink: oklch(24% 0.03 55);
+  --color-ink-2: oklch(42% 0.03 55);
+  --color-accent: oklch(47% 0.1 58);
+  --color-accent-hover: oklch(40% 0.1 58);
+  --color-on-accent: oklch(98% 0.01 85);
+  --color-sun: oklch(86% 0.17 92);
+  --color-rule: oklch(86% 0.02 75);
+  --color-dark: oklch(23% 0.05 55);
+  --color-on-dark: oklch(96% 0.015 85);
+  --color-on-dark-2: oklch(78% 0.03 75);
+  --color-focus: oklch(55% 0.17 250);
+
+  --font-display: "Bricolage Grotesque", "Noto Nastaliq Urdu", system-ui, sans-serif;
+  --font-body: "Public Sans", "Noto Nastaliq Urdu", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6.5rem;
+
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --text-2xl: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  --text-display: clamp(2.6rem, 1.6rem + 4.6vw, 5.25rem);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-med: 320ms;
+  --max-width: 1160px;
+}
