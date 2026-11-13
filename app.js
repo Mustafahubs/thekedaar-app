@@ -30,7 +30,7 @@
     s4_h: "حاضری لگائیں، جمعرات کو حساب کریں", s4_p: "ہر دن حاضری لگائیں، پھر جمعرات کا بل بنائیں۔",
     scr_h: "ایپ کے اندر ایک نظر", c1: "ہوم", c2: "حاضری", c3: "جمعرات کا حساب", c4: "پیمائش کیلکولیٹر",
     dl_h: "ٹھیکیدار ایپ ڈاؤن لوڈ کریں",
-    dl_p: "ورژن 1.0.0۔ دو فائلیں ہیں، ایپ ایک ہی ہے۔ سمجھ نہ آئے تو یونیورسل فائل لیں۔",
+    dl_p: "ورژن 1.1.0۔ دو فائلیں ہیں، ایپ ایک ہی ہے۔ سمجھ نہ آئے تو یونیورسل فائل لیں۔",
     dl_rec: "زیادہ تر فونز کے لیے بہتر", dl_arm_p: "چھوٹی فائل، جلدی ڈاؤن لوڈ۔ پچھلے کئی سالوں کے تقریباً ہر فون پر چلتی ہے۔", dl_btn: "ڈاؤن لوڈ",
     dl_any: "کوئی بھی اینڈرائیڈ فون", dl_uni_h: "یونیورسل", dl_uni_p: "بڑی فائل جو ہر فون پر چلتی ہے، پرانے فونز پر بھی۔", dl_btn2: "ڈاؤن لوڈ",
     dl_note: "فائلیں GitHub Releases پر رکھی ہیں۔ ڈاؤن لوڈ جانچنے کے لیے اس کا SHA-256 اوپر والے سے ملائیں۔", dl_all: "تمام ریلیزز",
@@ -49,7 +49,7 @@
     pp2: "پرائیویسی پالیسی", tos: "سروس کی شرائط", rel: "ریلیزز", contact: "رابطہ"
   };
 
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var nodes = document.querySelectorAll("[data-i18n]");
   var EN = {};
   nodes.forEach(function (n) { EN[n.getAttribute("data-i18n")] = n.innerHTML; });
@@ -66,7 +66,7 @@
     document.documentElement.dir = ur ? "rtl" : "ltr";
     nodes.forEach(function (n) {
       var k = n.getAttribute("data-i18n");
-      n.innerHTML = ur && UR[k] ? UR[k].replace("1.0.0", VERSION) : EN[k];
+      n.innerHTML = ur && UR[k] ? UR[k].replace("1.1.0", VERSION) : EN[k];
     });
     document.querySelectorAll(".lang button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang));
